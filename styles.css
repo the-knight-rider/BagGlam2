@@ -32,6 +32,7 @@
 .head1 a {
     color: white;
     text-decoration: none;
+    border-bottom: solid 1px;
 }
 
 .head1 ul li :hover {
@@ -44,6 +45,41 @@
     transition: 0.3s ease;
 
 }
+/* .header1 {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .header1 {
+        display: none; 
+    }
+}
+
+@media (max-width: 768px) {
+    .header1 {
+        display: block;
+    }
+} */
+
+
+
+
+
+
+
+ @media (max-width: 768px) {
+    .head1,.search:nth-child(1),.favaccount,.navlist  {
+        display: none;
+    }
+    .mobilehead{
+        background-color: rgba(228, 224, 223, 0.651);
+        padding: 0 20% 0 20%;
+        border-radius: 10px;
+        margin: 10px;
+    }
+} 
+
+
 
 .head2 {
     display: flex;
@@ -102,6 +138,7 @@
 
 
 
+
 .head2 select,
 select:hover {
     background-color: aliceblue;
@@ -148,61 +185,194 @@ button {
 }
 
 .search:hover {
-    transform: scale(1.02);
+    transform: scale(1.1);
     transition: 0.3s ease-in-out;
 }
 
 
 
-
-#copyright {
+#copyright{
     text-align: center;
 }
-
-footer {
+footer{
     background-color: rgb(34, 34, 34);
     color: white;
 }
-
-.foot {
+.foot{
     display: flex;
     justify-content: center;
     margin: auto;
 }
-
-.foot1 h5 {
+.foot1 h5{
     text-align: center;
     font-size: larger;
     margin-bottom: 10px;
 }
-
-.foot1 {
+.foot1{
     width: 25%;
     margin: 2em;
     padding: 2em;
 }
-
-#foot1 {
+#foot1{
     text-align: center;
 }
-
-footer p,
-li,
-a {
+footer p,li,a{
     margin: 3px;
     color: rgb(179, 183, 186);
     list-style: none;
     text-decoration: none;
 }
-
-#foot1:hover {
+#foot1:hover{
+    color: brown;
+}
+#foot1 a:hover{
+    color: brown;
+}
+#foot2:hover{
     color: brown;
 }
 
-#foot1 a:hover {
-    color: brown;
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .foot {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foot1 {
+        margin: 10px 0;
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+    }
 }
 
-#foot2:hover {
-    color: brown;
+@media (max-width: 480px) {
+    .foot1{
+        width: 80%;
+        margin: 2em;
+        padding: 2em;
+    }
+    .foot1 h5 {
+        font-size: 16px;
+    }
+
+    .foot1 p, .foot1 ul, .foot1 li {
+        font-size: 12px;
+    }
+
+    #copyright {
+        font-size: 12px;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * {
+    box-sizing: border-box;
+} */
+
+.slid {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    /* width: 90vw; */
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.slider {
+    position: relative;
+    width: 95%;
+    margin: 1em;
+    /* max-width: 800px; */
+    height: 70vh;
+    /* width: 90vw; */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.slide.active {
+    opacity: 1;
+}
+.scrolling-text{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.marquee-inner {
+    display: flex;
+    width: 70%; 
+    animation: marquee 10s linear infinite; 
+}
+
+.marquee-inner span {
+    width: 50%; 
+    font-size: 1.5em;
+    flex-shrink: 0;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+@media (max-width: 768px) {
+    .marquee-inner {
+        animation: marquee 15s linear infinite; /* Slower animation for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .marquee-inner {
+        animation: marquee 20s linear infinite; /* Even slower animation for very small screens */
+    }
+}
+
+
+
