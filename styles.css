@@ -182,7 +182,6 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin: 0;
     background-color: #f0f0f0;
 }
@@ -191,9 +190,7 @@ button {
     position: relative;
     width: 95%;
     margin: 1em;
-
-    height: 70vh;
-
+    height: 90vh;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -226,7 +223,9 @@ button {
 .uslogan{
     display: flex;
     justify-content: center;
-
+    background-color: rgb(227, 31, 31);
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
 }
 .slogan{
     display: grid;
@@ -240,7 +239,6 @@ button {
     border-top: solid 2px;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
-
 }
 
 @media (max-width: 768px) {
@@ -562,6 +560,32 @@ button {
         object-fit: cover;
     }
 }
+
+.video-text{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 45%;
+    font-size: 30px;
+    color: #000000;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .scrolling-text {
     margin: 0;
