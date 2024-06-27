@@ -11,7 +11,7 @@
     padding-left: 10em;
     padding-right: 10em;
     color: white;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-weight: 900;
 }
 
@@ -296,7 +296,7 @@ button {
     background: rgba(0, 0, 0, 0.616);
     color: #fff;
     padding: 15px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .card-text h3 {
