@@ -75,7 +75,7 @@
     padding-left: 5em;
     padding-right: 5em;
     align-items: center;
-    background-color: rgba(161, 163, 165, 0.577);
+    background-color: rgba(161, 163, 165, 0.875);
 
 }
 
@@ -234,7 +234,7 @@ button {
     margin-top: 1em;
     background-color:  #f4f4f4;
     padding-bottom: 0.3em;
-    font-size: 2em;
+    font-size: 1.8em;
     text-align: center;
     border-top: solid 2px;
     border-top-right-radius: 30px;
@@ -270,6 +270,7 @@ button {
     position: relative;
     width: 12em;
     margin: 1em;
+    margin-top: 2em;
     border: 1px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
@@ -295,8 +296,11 @@ button {
     width: 100%;
     background: rgba(0, 0, 0, 0.616);
     color: #fff;
-    padding: 15px;
+    padding-bottom: 10px;
     /* box-sizing: border-box; */
+}
+.card-text:hover{
+    background-color: #000000;
 }
 
 .card-text h3 {
@@ -442,6 +446,11 @@ button {
 
 .card1 img {
     border: 2px solid #262626;
+    transition: 0.3s ease-out;
+}
+.card1 img:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in;
 }
 
 .card1 {
@@ -452,8 +461,12 @@ button {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: transparent;
     text-align: center;
+    transition: 0.3s ease-out;
 }
-
+.card1:hover{
+    transform: scale(1.03);
+    transition: 0.3s ease-in;
+}
 
 .card-text1 {
     padding: 15px;
@@ -527,6 +540,56 @@ button {
     }
 }
 
+.heading{
+    font-size: 4em;
+    color: #f10f0f;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 6px 6px 4px rgba(0, 0, 0, 0.6);
+}
+
+.roundcardmain{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 0;
+    justify-content:center;
+    align-items: center;
+    margin: 3em 10em 0 10em;
+    
+}
+.roundcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rdcard {
+    width: 7em;
+    height: 7em;
+    border: 4px solid #ff5500;
+    border-radius: 100px;
+    overflow: hidden;
+   
+  
+}
+.rdcard video{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.rdcard-text {
+    padding: 15px;
+}
+
+.rdcard-text h3 {
+    margin: 0;
+    font-size:1em;
+    text-align: center;
+}
+
+
+
 
 .vediomain {
     position: relative;
@@ -570,22 +633,6 @@ button {
     color: #000000;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .scrolling-text {
     margin: 0;
@@ -637,6 +684,95 @@ button {
     }
 }
 
+
+.containercard2{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f4f4f4; */
+    margin: 0 3em 0 3em;
+}
+
+.bodycard2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2em;
+}
+.card2:hover {
+    transform: scale(1.03);
+    transition: 0.3s ease-in-out;
+}
+
+
+.card2 {
+    position: relative;  
+    margin-top: 2em;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+
+.card-text2 {
+    position: relative;
+    width: 100%;
+  
+    background: rgba(0, 0, 0, 0.489);
+    color: #fff;
+    padding-bottom: 10px;
+    transition: .2s;
+    
+}
+.card-text2:hover{
+    background-color: #000000bb;
+    transition: .2s;
+}
+
+.card-text2 h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.card-text2 p {
+    margin: 10px 0 0;
+    font-size: 1em;
+}
+.card-text2 button{
+background-color: #000000;
+padding: 4% 25% 4% 25% ;
+border-radius: 5px;
+color: #f0f0f0;
+box-shadow: 0 1px 1px rgb(255, 255, 255);
+
+transition: .2s;
+}
+.card-text2 button:hover{
+    background-color: #f10f0f;
+    transition: .2s;
+}
+
+
+.heading1{
+    font-size: 8em;
+    text-align: center;
+
+}
+
+.card2 {
+    position: relative;
+    width: 100%;
+}
+
+.card2 video {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
 
 
 #copyright {
