@@ -51,6 +51,15 @@ body{
 
 
 
+@media (max-width: 1380px) {
+    .head1 {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    
+}
 
 
 @media (max-width: 768px) {
@@ -189,7 +198,14 @@ button {
     transition: 0.3s ease-in-out;
 }
 
+@media (max-width: 1380px) {
+    
 
+.head2 {
+    padding-left: 1em;
+    padding-right: 1em;
+}   
+}
 .slid {
     font-family: Arial, sans-serif;
     display: flex;
@@ -227,6 +243,11 @@ button {
 .slide.active {
     opacity: 1;
 }
+@media (max-width: 1380px) {
+    .slider {
+        height: 65vh;
+    }
+    }
 @media (max-width: 768px) {
     
 .slider {
@@ -258,7 +279,13 @@ button {
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
 }
-
+@media (max-width: 1380px) {
+    .slogan{
+        margin-top: 0.5em;
+        font-size: 1.25em;
+    }
+    }
+    
 @media (max-width: 768px) {
     .slogan{
         margin-top: 0.5em;
@@ -335,32 +362,11 @@ button {
     margin: 10px 0 0;
     font-size: 1em;
 }
-
-@media (max-width: 768px) {
+@media (max-width: 1380px) {
     .sell1 {
         grid-template-columns: repeat(3, 1fr);
-        gap: 1.1em;
-    }
-    .card {
-        width: 11em;
-        height: 13.8em;
-    }
-    .card-text {  
-        padding: 15px;
-        
-    }
-    
-    .card-text h3 {
-        margin: 0;
-        font-size: 0.9em;
-    }
-    
-    .card-text p {
-        margin: 10px 0 0;
-        font-size: 0.5em;
-    }
-    
-    
+        gap: .5em;
+    }   
 }
 
 @media (max-width: 480px) {
@@ -418,6 +424,11 @@ button {
     font-size: 2.5em;
     color: white;
     flex-shrink: 0;
+}
+@media (max-width: 1380px) {
+    .scrolling-text1 {
+        margin:1.3em 2.6em 0em 2.6em;
+    }    
 }
 
 @media (max-width:768px) {
@@ -489,7 +500,25 @@ button {
     font-size:1em;
     text-align: center;
 }
-
+@media (max-width: 1380px) {
+    .roundcardmain{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1em;
+        margin: 1em 1em 1em 1em;  
+    }
+    #mdisoff{
+        display: none;
+    }
+    .rdcard {
+        width: 10em;
+        height: 10em;    
+    }
+    .rdcard-text h3 {
+        margin: 0;
+        font-size:1.8em;
+        text-align: center;
+    }   
+}
 @media (max-width:768px) {
      
 }
@@ -578,6 +607,27 @@ button {
 
 #price {
     text-decoration: line-through;
+}
+@media (max-width: 1380px) {
+    .sold1 {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 1.5em;
+        gap: 1em;
+    
+    }
+    .card1 {
+        width: 14em;
+        height: 18.6em;
+    }
+    .card-text1 h3 {
+        margin: 0;
+        font-size: 1.3em;
+    }
+    .card-text1 p {
+        margin: 0;
+        font-size: 0.8em;
+    }
+    
 }
 @media (max-width: 768px) {  
     .sold1 {
@@ -675,7 +725,27 @@ button {
     background-color: rgb(242, 163, 161); 
     transition: 0.5s;
 }
-
+@media (max-width: 1380px) {
+    
+    .vid video {
+        width: 100vw;
+        height: 50vh; 
+    }
+    
+    .centered-text{
+        width: 100%;
+        font-size: 0.7em;
+    }
+    .centered-text h1{
+        margin: 10px;
+    }
+    #buy-now {
+        padding: .2em .5em .2em .5em ;
+        margin: 10px;
+        font-size:0.7em;
+    }
+    
+}
 @media (max-width: 768px) {  
     
 }
@@ -724,7 +794,13 @@ button {
     font-size: 8em;
     text-align: center;
 }
-
+@media (max-width: 1380px) {
+    .heading1{
+        font-size: 4em;
+        text-align: center;
+    }
+    
+}
 @media (max-width: 768px) {  
    
 }
@@ -810,11 +886,71 @@ transition: .2s;
     height: 40vh;
     object-fit: cover;
 }
-
+@media (max-width: 1380px) {
+    .containercard2{
+        margin: 0 1em 0 1em;
+    }
+    .bodycard2 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+    }
+    .card2:hover {
+        transform: scale(1.03);
+        transition: 0.3s ease-in-out;
+    }
+    
+    .card2 { 
+        margin-top: 1em;
+    }
+    .card-text2 {
+        width: 100%;
+        overflow: hidden;
+    }
+    .card-text2 h3 {
+        margin: 2px;
+        font-size: 2em;
+    }
+    .card-text2 p {
+        margin: 0 0 0 0;
+        font-size: 1.2em;
+    }
+    .card-text2 button{
+    background-color: #000000;
+    margin: .5em 0 0 0;
+    padding: 4% 25% 4% 25% ;
+    border-radius: 5px;
+    color: #f0f0f0;
+    box-shadow: 0 1px 1px rgb(255, 255, 255);
+    transition: .2s;
+    }
+    .card-text2 button:hover{
+        background-color: #f10f0f;
+        transition: .2s;
+    }
+    .card2 {
+        position: relative;
+        width: 100%;
+    }
+    .card2 video {
+        width: 100%;
+        height: 40vh;
+        object-fit: cover;
+    }
+    
+}
 @media (max-width: 768px) {  
    
 }
 @media (max-width: 480px) {
+    .card-text3 button{
+        background-color: #000000;
+        padding: 4% 25% 4% 25% ;
+        margin:.5em ;
+        border-radius: 5px;
+        color: #f0f0f0;
+        box-shadow: 0 1px 1px rgb(255, 255, 255);
+        transition: .2s;
+        }
     .containercard2{
         margin: 0 1em 0 1em;
     }
@@ -939,11 +1075,63 @@ transition: .2s;
     height: 40vh;
     object-fit: cover;
 }
-
+@media (max-width: 1380px) {
+    .containercard3{
+        margin: 0 1em 0 1em;
+    }
+    .bodycard3 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+    }
+    .card3 { 
+        margin-top: 1em;
+    }
+    .card-text3 {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+    .card-text3 h3 {
+        margin: 2px;
+        font-size: 2em;
+    }
+    .card-text3 p {
+        margin: 0 0 0 0;
+        font-size: 1.2em;
+    }
+    .card3 {
+        position: relative;
+        width: 100%;
+    }
+    .card3 video {
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+    }
+    .card-text3 button{
+        background-color: #000000;
+        padding: 4% 25% 4% 25% ;
+        margin:.5em ;
+        border-radius: 5px;
+        color: #f0f0f0;
+        box-shadow: 0 1px 1px rgb(255, 255, 255);
+        transition: .2s;
+        }
+}
 @media (max-width: 768px) {  
    
 }
 @media (max-width: 480px) {
+    .card-text3 button{
+        background-color: #000000;
+        padding: 4% 25% 4% 25% ;
+        margin:.5em ;
+        border-radius: 5px;
+        color: #f0f0f0;
+        box-shadow: 0 1px 1px rgb(255, 255, 255);
+        transition: .2s;
+        }
     .containercard3{
         margin: 0 1em 0 1em;
     }
@@ -977,6 +1165,7 @@ transition: .2s;
         height: 20vh;
         object-fit: cover;
     }
+    
 }
 
 
@@ -1065,9 +1254,25 @@ transition: .2s;
 
 }
 
-@media (max-width: 768px) {  
+@media (max-width: 1500px) {  
+    .video-text{
+        width: 100%;
+        top: 50%;
+        font-size: 1.2em;
+        color: #000000;
+    }
 }
-
+@media (max-width: 1000px) {  
+    .video-text{
+        width: 100%;
+        top: 50%;
+        /* font-size: 5.2em; */
+        color: #000000;
+    }
+}
+@media (max-width: 768px) {  
+    
+}
 @media (max-width: 480px) {
     .vediomain video {
         height: 30vh;
